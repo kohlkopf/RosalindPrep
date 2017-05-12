@@ -11,6 +11,6 @@ for c in seq:
 
 
 for key, value in d.items():
-    print value,        #, importantly replaces \n with space
+    print key, value,        #, importantly replaces \n with space
 
 
