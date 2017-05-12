@@ -3,7 +3,7 @@ print "Given: A DNA string s of length at most 1000 nt. Return: Four integers (s
 import collections
 
 print "String: "
-seq = str(raw_input())
+seq = raw_input()
 
 d = collections.defaultdict(int)
 for c in seq:
