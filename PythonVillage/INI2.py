@@ -6,7 +6,7 @@ def answer(side_a, side_b):
 def hypotenuse(side_a, side_b):
 	return answer(side_a, side_b) 
 
-print  side_a = float(raw_input())
+side_a = float(raw_input())
 
 print "The length of side A is", side_a
 
