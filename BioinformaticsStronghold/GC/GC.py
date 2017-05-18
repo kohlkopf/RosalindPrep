@@ -3,8 +3,9 @@ print "Given: At most 10 DNA strings in FASTA format (of length at most 1 kbp ea
 from Bio import SeqIO
 from Bio.SeqUtils import GC
 
-for seq_record in SeqIO.parse("input.fasta", "fasta"):
-    calc = {seq_record.id : GC(seq_record.seq)}
+id_gc = {}
+for f in SeqIO.parse('input.fasta', 'fasta'):
+    id_gc[f.id] = GC(f.seq)
 
-print max(calc, key=calc.get)
-print calc[max(calc, key=calc.get)]
+print(max(id_gc, key=id_gc.get))
+print(id_gc[max(id_gc, key=id_gc.get)])
