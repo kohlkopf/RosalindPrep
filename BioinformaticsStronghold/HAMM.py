@@ -3,5 +3,5 @@ print "Given: Two DNA strings s and t of equal length (not exceeding 1 kbp).Retu
 s1 = raw_input()
 s2 = raw_input()
 
-print sum ( s1[i] != s2[i] for i in range(len(s1)) )
+print sum (s1[i] != s2[i] for i in range(len(s1)))
 
